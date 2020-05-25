@@ -15,13 +15,13 @@
   canvas.addEventListener('mousedown', onMouseDown, false);
   canvas.addEventListener('mouseup', onMouseUp, false);
   canvas.addEventListener('mouseout', onMouseUp, false);
-  canvas.addEventListener('mousemove', throttle(onMouseMove, 10), false);
+  canvas.addEventListener('mousemove', onMouseMove, false);
   
   //Touch support for mobile devices
   canvas.addEventListener('touchstart', onMouseDown, false);
   canvas.addEventListener('touchend', onMouseUp, false);
   canvas.addEventListener('touchcancel', onMouseUp, false);
-  canvas.addEventListener('touchmove', throttle(onMouseMove, 10), false);
+  canvas.addEventListener('touchmove', onMouseMove, false);
 
   for (var i = 0; i < colors.length; i++){
     colors[i].addEventListener('click', onColorUpdate, false);
