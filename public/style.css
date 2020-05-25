@@ -29,6 +29,9 @@ html, body {
 
 .colors {
   position: fixed;
+  bottom: 0.5em;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 .color {
